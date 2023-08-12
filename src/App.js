@@ -3,13 +3,14 @@ import { useRef } from "react";
 import potrait from "./images/abhilash.png";
 import "./App.scss";
 import About from "./About";
+import Work from "./Work";
 
 function App() {
   const isMobile = useCheckPlatform();
   const workRef = useRef(null);
   const aboutRef = useRef(null);
   return (
-    <div className="App">
+    <div className="App" ref={aboutRef}>
       <div className={isMobile ? "MobileContainer" : "Container"}>
         <div
           className={
@@ -62,7 +63,10 @@ function App() {
           />
         </div>
       </div>
-      <About/>
+      <About />
+      <div ref={workRef}>
+        <Work />
+      </div>
     </div>
   );
 }
