@@ -1,23 +1,68 @@
-import logo from './logo.svg';
-import './App.css';
+import useCheckPlatform from "./hooks/useCheckPlatform";
+import { useRef } from "react";
+import potrait from "./images/abhilash.png";
+import "./App.scss";
+import About from "./About";
 
 function App() {
+  const isMobile = useCheckPlatform();
+  const workRef = useRef(null);
+  const aboutRef = useRef(null);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className={isMobile ? "MobileContainer" : "Container"}>
+        <div
+          className={
+            isMobile ? "MobileContainer MobileNavbar" : "Container Navbar"
+          }
         >
-          Learn React
-        </a>
-      </header>
+          <div
+            className="hover-underline-animation"
+            onClick={() =>
+              aboutRef.current?.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            About
+          </div>
+          <div
+            className="hover-underline-animation"
+            onClick={() =>
+              workRef.current?.scrollIntoView({
+                behavior: "smooth",
+                inline: "start",
+                block: "nearest",
+              })
+            }
+          >
+            Work Experience
+          </div>
+          <a
+            style={{ textDecoration: "none" }}
+            className="hover-underline-animation"
+            href={"#"}
+            without
+            rel="noreferrer"
+            target="_blank"
+          >
+            Resume
+          </a>
+          <a
+            style={{ textDecoration: "none" }}
+            className="hover-underline-animation"
+            href="mailto:riya.ankita24@gmail.com"
+          >
+            Contact
+          </a>
+        </div>
+        <div className="TitleBox">
+          <img
+            src={potrait}
+            style={{ width: isMobile ? 40 : 80, height: isMobile ? 40 : 80 }}
+            alt="Ankita"
+          />
+        </div>
+      </div>
+      <About/>
     </div>
   );
 }

@@ -1,0 +1,62 @@
+.hr {
+  width: 3px;
+  height: 87vh;
+  margin: 8px auto;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.AboutContainer {
+  padding: 20px;width: 45%;
+}
+
+.InnerContainer{
+    width: 70px;
+    height: 35px;
+    background-color: black;
+    color: #fce166;
+    border: 1px solid #fff;
+    margin-left: 8px;
+    margin-top: -33px;
+}
+
+.InnerContainer p {
+    margin-top: 7px;
+    text-align: center;
+}
+
+.OuterContainer {
+    width: 70px;
+    height: 40px;
+    background-color:  #fce166;
+}
+
+.AboutContent {
+    margin-top: 80px;
+    padding: 20px;
+    border: 2px solid #fce166;
+    width: 90%;
+    box-shadow: 6px 6px 4px -4px #fce166;
+    border-radius: 8px;
+}
+
+.AboutContainer p{
+    line-height: 32px;
+}
+
+.SkillFlexBox{
+    margin-top: 60px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+.SkillContent{
+    margin-top: 20px;
+    padding: 12px;
+    border: 2px solid #fce166;
+    width:fit-content;
+    box-shadow: 6px 6px 4px -4px #fce166;
+}
