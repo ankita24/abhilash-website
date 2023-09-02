@@ -1,62 +1,163 @@
 .hr {
-  width: 3px;
   height: 87vh;
   margin: 8px auto;
   background-color: #000;
   opacity: 0.8;
 }
 
-.AboutContainer {
-  padding: 20px;width: 45%;
+%shared-aboutContainer {
+  padding: 20px;
+  width: 100%;
+  margin-left: 10px;
 }
 
-.InnerContainer{
-    width: 70px;
-    height: 35px;
-    background-color: black;
-    color: #fce166;
-    border: 1px solid #fff;
-    margin-left: 8px;
-    margin-top: -33px;
+.AboutContainer {
+  @extend %shared-aboutContainer;
+  height: calc(100vh - 126px);
+}
+
+.MobileAboutContainer {
+  @extend %shared-aboutContainer;
+  height: calc(100vh - 200px);
+}
+
+.AboutContainer p {
+  line-height: 32px;
+}
+
+.MobileAboutContainer p {
+  line-height: 28px;
+  font-size: 12px;
+}
+
+.InnerContainer {
+  width: 70px;
+  height: 35px;
+  background-color: black;
+  color: #fce166;
+  border: 1px solid #fce166;
+  margin-left: 4px;
+  margin-top: -34px;
+  border-radius: 4px;
 }
 
 .InnerContainer p {
-    margin-top: 0px;
-    text-align: center;
+  margin-top: 0px;
+  text-align: center;
 }
 
 .OuterContainer {
-    width: 70px;
-    height: 40px;
-    background-color:  #fce166;
+  width: 70px;
+  height: 35px;
+  background-color: #fce166;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+%shared-aboutContent {
+  margin-top: 80px;
+  height: 300px;
+  padding: 20px;
+  box-shadow: -6px -6px 6px -4px #fff;
+  border-radius: 8px;
+  width: 90%;
 }
 
 .AboutContent {
-    margin-top: 80px;
-    padding: 20px;
-    border: 2px solid #fce166;
-    width: 90%;
-    box-shadow: 6px 6px 4px -4px #fce166;
-    border-radius: 8px;
+  @extend %shared-aboutContent;
+  margin-top: 80px;
 }
 
-.AboutContainer p{
-    line-height: 32px;
+.AboutContentMobile {
+  @extend %shared-aboutContent;
+  margin-top: 20px;
 }
 
-.SkillFlexBox{
-    margin-top: 60px;
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    width: 70%;
-    flex-wrap: wrap;
+%shared-aboutContentInner {
+  margin-left: 16px;
+  margin-top: -330px;
+  height: 300px;
+  padding: 20px;
+  width: 90%;
+  box-shadow: 6px 6px 6px -4px #000;
+  border-radius: 12px;
 }
 
-.SkillContent{
-    margin-top: 20px;
-    padding: 12px;
-    border: 2px solid #fce166;
-    width:fit-content;
-    box-shadow: 6px 6px 4px -4px #fce166;
+.AboutContentInner {
+  @extend %shared-aboutContentInner;
+}
+
+.AboutContentInnerMobile {
+  @extend %shared-aboutContentInner;
+  width: 82%;
+  height: 60vh;
+}
+
+.SkillFlexBox {
+  margin-top: 60px;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+.SkillContent {
+  margin-left: 4px;
+  margin-top: -28px;
+  padding: 8px;
+  // border: 2px solid #fce166;
+  width: fit-content;
+  box-shadow: 6px 6px 4px -4px #000;
+}
+
+.SkillContentOuter {
+  margin-top: 20px;
+  padding: 8px;
+  // border: 2px solid #000;
+  height: 12px;
+  box-shadow: -6px -6px 4px -4px #fff;
+}
+
+%shared-socials {
+  background-color: #000;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 4px;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  box-shadow: -8px -8px 8px -8px #000;
+  border-top: 3px solid #fce166;
+  border-left: 3px solid #fce166;
+}
+
+.Socials {
+  @extend %shared-socials;
+  margin-top: 120px;
+}
+
+.MobileSocials {
+  @extend %shared-socials;
+}
+
+.Socials a {
+  text-decoration: none;
+  padding: 6px;
+}
+
+.Socials a img {
+  width: 30px;
+  height: 30px;
+}
+
+.MobileSocials a {
+  text-decoration: none;
+  padding: 3px;
+}
+
+.MobileSocials a img {
+  width: 20px;
+  height: 20px;
 }

@@ -1,15 +1,29 @@
 import React from "react";
-import { hr } from "./styles.scss";
+import useCheckPlatform from "../hooks/useCheckPlatform";
+import LinkedIN from "../images/linkedIn.png";
+import Github from "../images/github.png";
+import Twitter from "../images/twitter.png";
+import "./styles.scss";
 
 export default function About() {
+  const isMobile = useCheckPlatform();
   return (
-    <div style={{ display: "flex" }}>
-      <div className="AboutContainer">
+    <div
+      style={{
+        display: "flex",
+        backgroundImage:
+          "conic-gradient(white, #fce166, white,  #fce166,white)",
+      }}
+    >
+      <div className={isMobile ? "MobileAboutContainer" : "AboutContainer"}>
         <div className="OuterContainer" />
         <div className="InnerContainer">
           <p>About</p>
         </div>
-        <div className="AboutContent">
+        <div className={isMobile ? "AboutContentMobile" : "AboutContent"}></div>
+        <div
+          className={isMobile ? "AboutContentInnerMobile" : "AboutContentInner"}
+        >
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -23,26 +37,75 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="hr" />
-      <div className="AboutContainer">
-        <div className="OuterContainer" />
-        <div className="InnerContainer">
-          <p>Skills</p>
-        </div>
-        <div style={{marginTop:80}}>
-          <div className="SkillFlexBox">
-            <div className="SkillContent">React JS</div>
-            <div className="SkillContent">React JS</div>
-            <div className="SkillContent">React JS</div>
-            <div className="SkillContent">React JS</div>
-            <div className="SkillContent">React JS</div>
-            <div className="SkillContent">React JS</div>
-            <div className="SkillContent">React JS</div>
-            <div className="SkillContent">React JS</div>
-            <div className="SkillContent">React JS</div>
+
+      {!isMobile ? (
+        <>
+          <div className="AboutContainer">
+            <div style={{ marginLeft: 60 }}>
+              <div className="OuterContainer" />
+              <div className="InnerContainer">
+                <p>Skills</p>
+              </div>
+              <div style={{ marginTop: 80 }}>
+                <div className="SkillFlexBox">
+                  <div>
+                    <div className="SkillContentOuter"></div>
+                    <div className="SkillContent">React JS</div>
+                  </div>
+                  <div>
+                    <div className="SkillContentOuter"></div>
+                    <div className="SkillContent">React JS</div>
+                  </div>
+                  <div>
+                    <div className="SkillContentOuter"></div>
+                    <div className="SkillContent">React JS</div>
+                  </div>
+                  <div>
+                    <div className="SkillContentOuter"></div>
+                    <div className="SkillContent">React JS</div>
+                  </div>
+                  <div>
+                    <div className="SkillContentOuter"></div>
+                    <div className="SkillContent">React JS</div>
+                  </div>
+                  <div>
+                    <div className="SkillContentOuter"></div>
+                    <div className="SkillContent">React JS</div>
+                  </div>
+                  <div>
+                    <div className="SkillContentOuter"></div>
+                    <div className="SkillContent">React JS</div>
+                  </div>
+                  <div>
+                    <div className="SkillContentOuter"></div>
+                    <div className="SkillContent">React JS</div>
+                  </div>
+                  <div>
+                    <div className="SkillContentOuter"></div>
+                    <div className="SkillContent">React JS</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+          <div className={isMobile ? "MobileSocials" : "Socials"}>
+            <a
+              href="https://www.linkedin.com/in/abhilash-srinivasan-208484b3/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={LinkedIN} alt="linkedIn" />
+            </a>
+            <a
+              href="https://twitter.com/ankita24_riya"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Twitter} alt="twitter" />
+            </a>
+          </div>
+        </>
+      ) : null}
     </div>
   );
 }
