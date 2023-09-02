@@ -46,7 +46,7 @@ function App() {
               <a
                 style={{ textDecoration: "none" }}
                 className="hover-underline-animation"
-                href={"#"}
+                href="#"
                 without
                 rel="noreferrer"
                 target="_blank"
@@ -147,16 +147,6 @@ function App() {
                 Contact
               </a>
             </div>
-            {/* <div className="TitleBox">
-              <img
-                src={potrait}
-                style={{
-                  width: isMobile ? 40 : 80,
-                  height: isMobile ? 40 : 80,
-                }}
-                alt="Ankita"
-              />
-            </div> */}
           </>
         </div>
       )}
@@ -167,9 +157,9 @@ function App() {
           <Skills />
         </div>
       )}
-      {/* <div ref={workRef}>
+      <div ref={workRef}>
         <Work />
-      </div> */}
+      </div>
     </div>
   );
 }

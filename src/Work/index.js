@@ -8,7 +8,7 @@ export default function Work() {
   const isMobile = useCheckPlatform();
   return (
     <div className={isMobile ? "MobileWorkContainer" : "WorkContainer"}>
-      <div className="WorkHeader">
+      <div className={isMobile ? "MobileWorkHeader" : "WorkHeader"}>
         <div className="WorkTitleOuterContainer" />
         <div className="WorkTitleInnerContainer">
           <p>Work Experience</p>

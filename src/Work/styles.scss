@@ -8,22 +8,31 @@
   height: 92vh;
 }
 
-.WorkHeader {
-  margin-top: 20px;
+%shared-workHeader {
+  margin-top: 40px;
   align-self: center;
   width: 10%;
+}
+
+.WorkHeader {
+  @extend %shared-workHeader;
   margin: 20px auto;
 }
 
+.MobileWorkHeader {
+  @extend %shared-workHeader;
+  margin: 20px;
+}
 
-.WorkTitleInnerContainer{
-  width: 150px;
-  height: 35px;
+.WorkTitleInnerContainer {
+  width: 146px;
+  height: 40px;
   background-color: black;
   color: #fce166;
-  border: 1px solid #fff;
-  margin-left: 8px;
-  margin-top: -33px;  
+  border: 1px solid #fce166;
+  margin-left: 6px;
+  margin-top: -38px;
+  border-radius: 4px;
 }
 
 .WorkTitleInnerContainer p {
@@ -34,7 +43,9 @@
 .WorkTitleOuterContainer {
   width: 150px;
   height: 40px;
-  background-color:  #fce166;
+  background-color: #fce166;
+  border: 1px solid #000;
+  border-radius: 4px;
 }
 
 .WorkHr {

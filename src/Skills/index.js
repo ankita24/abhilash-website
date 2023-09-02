@@ -10,7 +10,7 @@ export default function index() {
           "conic-gradient(white, #fce166, white,  #fce166,white)",
       }}
     >
-      <div className="AboutContainer">
+      <div className="SkillAboutContainerMobile">
         <div>
           <div className="OuterContainer" />
           <div className="InnerContainer">

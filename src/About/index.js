@@ -1,7 +1,6 @@
 import React from "react";
 import useCheckPlatform from "../hooks/useCheckPlatform";
 import LinkedIN from "../images/linkedIn.png";
-import Github from "../images/github.png";
 import Twitter from "../images/twitter.png";
 import "./styles.scss";
 
