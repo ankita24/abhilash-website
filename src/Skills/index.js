@@ -13,7 +13,7 @@ export default function index() {
       <div className="SkillAboutContainerMobile">
         <div>
           <div className="OuterContainer" />
-          <div className="InnerContainer">
+          <div className="MobileInnerContainer">
             <p>Skills</p>
           </div>
           <div style={{ marginTop: 20 }}>
