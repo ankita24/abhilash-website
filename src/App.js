@@ -6,6 +6,7 @@ import "./App.scss";
 import About from "./About";
 import Skills from "./Skills";
 import Work from "./Work";
+import resumePDF from "./resume.pdf";
 
 function App() {
   const isMobile = useCheckPlatform();
@@ -46,7 +47,7 @@ function App() {
               <a
                 style={{ textDecoration: "none" }}
                 className="hover-underline-animation"
-                href="#"
+                href={resumePDF}
                 without
                 rel="noreferrer"
                 target="_blank"
@@ -137,7 +138,7 @@ function App() {
               <a
                 style={{ textDecoration: "none" }}
                 className="hover-underline-animation"
-                href={"#"}
+                href={resumePDF}
                 without
                 rel="noreferrer"
                 target="_blank"
@@ -147,7 +148,7 @@ function App() {
               <a
                 style={{ textDecoration: "none" }}
                 className="hover-underline-animation"
-                href="mailto:riya.ankita24@gmail.com"
+                href="mailto:abhilash.srinivasan1994@gmail.com"
               >
                 Contact
               </a>
