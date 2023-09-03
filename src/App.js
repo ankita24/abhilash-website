@@ -61,15 +61,18 @@ function App() {
                 Contact
               </a>
             </div>
-            <div className="TitleBox">
-              <img
-                src={potrait}
-                style={{
-                  width: isMobile ? 40 : 80,
-                  height: isMobile ? 40 : 80,
-                }}
-                alt="Ankita"
-              />
+            <div style={{ display: "flex" }}>
+              <p className="Name">Abhilash Srinivasan</p>
+              <div className="TitleBox">
+                <img
+                  src={potrait}
+                  style={{
+                    width: isMobile ? 40 : 80,
+                    height: isMobile ? 40 : 80,
+                  }}
+                  alt="Abhilash"
+                />
+              </div>
             </div>
           </>
         ) : (
@@ -80,6 +83,8 @@ function App() {
               style={{ width: 20, height: 20, padding: 4 }}
               onClick={() => setOpen(!open)}
             />
+
+            <p className="MobileName">Abhilash Srinivasan</p>
             <div className="TitleBox">
               <img
                 src={potrait}

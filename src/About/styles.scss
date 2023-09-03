@@ -13,7 +13,7 @@
 
 .AboutContainer {
   @extend %shared-aboutContainer;
-  height: calc(100vh - 126px);
+  min-height: calc(100vh - 126px);
 }
 
 .MobileAboutContainer {
@@ -28,6 +28,12 @@
 .MobileAboutContainer p {
   line-height: 28px;
   font-size: 12px;
+}
+
+.MobileAboutContainer .AboutTitle {
+  line-height: 28px;
+  font-size: 16px;
+  margin-top: 2px;
 }
 
 .InnerContainer {
@@ -97,7 +103,6 @@
   margin-top: 60px;
   display: flex;
   gap: 16px;
-  justify-content: space-between;
   width: 70%;
   flex-wrap: wrap;
 }

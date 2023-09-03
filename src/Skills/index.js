@@ -20,39 +20,39 @@ export default function index() {
             <div className="SkillFlexBoxMobile">
               <div>
                 <div className="SkillContentOuter"></div>
-                <div className="SkillContent">React JS</div>
+                <div className="SkillContentMobile">Project Management</div>
               </div>
               <div>
                 <div className="SkillContentOuter"></div>
-                <div className="SkillContent">React JS</div>
+                <div className="SkillContentMobile">Capacity Planning</div>
               </div>
               <div>
                 <div className="SkillContentOuter"></div>
-                <div className="SkillContent">React JS</div>
+                <div className="SkillContentMobile">Forecasting</div>
               </div>
               <div>
                 <div className="SkillContentOuter"></div>
-                <div className="SkillContent">React JS</div>
+                <div className="SkillContentMobile">Scheduling</div>
               </div>
               <div>
                 <div className="SkillContentOuter"></div>
-                <div className="SkillContent">React JS</div>
+                <div className="SkillContentMobile">Stakeholder Management</div>
               </div>
               <div>
                 <div className="SkillContentOuter"></div>
-                <div className="SkillContent">React JS</div>
+                <div className="SkillContentMobile">Reporting & Analysis</div>
               </div>
               <div>
                 <div className="SkillContentOuter"></div>
-                <div className="SkillContent">React JS</div>
+                <div className="SkillContentMobile">Problem Solving</div>
               </div>
               <div>
                 <div className="SkillContentOuter"></div>
-                <div className="SkillContent">React JS</div>
+                <div className="SkillContentMobile">Microsoft Excel</div>
               </div>
               <div>
                 <div className="SkillContentOuter"></div>
-                <div className="SkillContent">React JS</div>
+                <div className="SkillContentMobile">Operations</div>
               </div>
             </div>
           </div>

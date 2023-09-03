@@ -19,7 +19,7 @@ export default function Work() {
           return (
             <div className={isMobile ? "MobileWorkFlexBox" : "WorkFlexBox"}>
               <img className="WorkLogo" src={item.logo} alt={item.company} />
-              <div className="WorkElement">
+              <div className={isMobile ? "MobileWorkElement" : "WorkElement"}>
                 <b>{item.company}</b>
                 <p>{item.designation}</p>
                 <i>{item.time_period}</i>
@@ -29,7 +29,9 @@ export default function Work() {
                       className={isMobile ? "MobileWorkList" : "WorkList"}
                       style={{ marginTop: 8 }}
                     >
-                      {i}
+                      <p>{i.position}</p>
+                      <p>{i.time_period}</p>
+                      <p>{i.place}</p>
                     </li>
                   ))}
                 </ul>

@@ -17,7 +17,7 @@ export default function About() {
       <div className={isMobile ? "MobileAboutContainer" : "AboutContainer"}>
         <div className="OuterContainer" />
         <div className="InnerContainer">
-          <p>About</p>
+          <p className={isMobile ? "AboutTitle" : null}>About</p>
         </div>
         <div className={isMobile ? "AboutContentMobile" : "AboutContent"}></div>
         <div
@@ -49,39 +49,51 @@ export default function About() {
                 <div className="SkillFlexBox">
                   <div>
                     <div className="SkillContentOuter"></div>
-                    <div className="SkillContent">React JS</div>
+                    <div className="SkillContent">Project Management</div>
                   </div>
                   <div>
                     <div className="SkillContentOuter"></div>
-                    <div className="SkillContent">React JS</div>
+                    <div className="SkillContent">Capacity Planning</div>
                   </div>
                   <div>
                     <div className="SkillContentOuter"></div>
-                    <div className="SkillContent">React JS</div>
+                    <div className="SkillContent">Forecasting</div>
                   </div>
                   <div>
                     <div className="SkillContentOuter"></div>
-                    <div className="SkillContent">React JS</div>
+                    <div className="SkillContent">Scheduling</div>
                   </div>
                   <div>
                     <div className="SkillContentOuter"></div>
-                    <div className="SkillContent">React JS</div>
+                    <div className="SkillContent">Stakeholder Management</div>
                   </div>
                   <div>
                     <div className="SkillContentOuter"></div>
-                    <div className="SkillContent">React JS</div>
+                    <div className="SkillContent">Reporting & Analysis</div>
                   </div>
                   <div>
                     <div className="SkillContentOuter"></div>
-                    <div className="SkillContent">React JS</div>
+                    <div className="SkillContent">Problem Solving</div>
                   </div>
                   <div>
                     <div className="SkillContentOuter"></div>
-                    <div className="SkillContent">React JS</div>
+                    <div className="SkillContent">Microsoft Excel</div>
                   </div>
                   <div>
                     <div className="SkillContentOuter"></div>
-                    <div className="SkillContent">React JS</div>
+                    <div className="SkillContent">Operations</div>
+                  </div>
+                  <div>
+                    <div className="SkillContentOuter"></div>
+                    <div className="SkillContent">Team Management</div>
+                  </div>
+                  <div>
+                    <div className="SkillContentOuter"></div>
+                    <div className="SkillContent">Team Management</div>
+                  </div>
+                  <div>
+                    <div className="SkillContentOuter"></div>
+                    <div className="SkillContent">Microsoft PowerPoint</div>
                   </div>
                 </div>
               </div>

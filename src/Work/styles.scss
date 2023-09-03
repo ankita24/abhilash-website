@@ -77,15 +77,22 @@
 
 .WorkFlexBox {
   @extend %shared-workFlexBox;
-  width: 40%;
+  width: 35%;
 }
 
 .MobileWorkFlexBox {
   @extend %shared-workFlexBox;
   width: 80%;
+  height: fit-content;
 }
 
 .WorkElement {
+  margin-left: 16px;
+  color: #000;
+  padding-bottom: 16px;
+}
+
+.MobileWorkElement {
   margin-left: 16px;
   color: #000;
   padding-bottom: 16px;
@@ -96,8 +103,18 @@
   margin: 0;
 }
 
+.MobileWorkElement b {
+  font-size: 14px;
+  margin: 0;
+}
+
 .WorkElement p {
   font-size: 14px;
+  margin: 0;
+}
+
+.MobileWorkElement p {
+  font-size: 12px;
   margin: 0;
 }
 
@@ -106,20 +123,66 @@
   margin: 0;
 }
 
+.MobileWorkElement i {
+  font-size: 10px;
+  margin: 0;
+}
+
 .WorkElement ul {
   padding: 10px;
   margin: 0;
 }
 
+.MobileWorkElement ul {
+  padding: 10px;
+  margin: 0;
+}
+
 %shared-workList {
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 .WorkList {
   @extend %shared-workList;
 }
 
+.WorkList p {
+  line-height: 20px;
+}
+
+.WorkList p:nth-child(1) {
+  font-weight: 600;
+}
+
+.WorkList p:nth-child(2) {
+  font-style: italic;
+  color: grey;
+  font-size: 12px;
+}
+
+.WorkList p:nth-child(3) {
+  font-size: 12px;
+}
+
 .MobileWorkList {
   @extend %shared-workList;
+  font-size: 12px;
+}
+
+.MobileWorkList p {
+  line-height: 20px;
+}
+
+.MobileWorkList p:nth-child(1) {
+  font-weight: 600;
+}
+
+.MobileWorkList p:nth-child(2) {
+  font-style: italic;
+  color: grey;
+  font-size: 12px;
+}
+
+.MobileWorkList p:nth-child(3) {
   font-size: 12px;
 }
